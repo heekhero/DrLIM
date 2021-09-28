@@ -4,6 +4,7 @@ A PyTorch implementation of 'Dimensionality Reduction by Learning an Invariant M
 ## Requirement
 * python 3
 * pytorch 1.0
+* einops
 
 ## Usage
 1. To train the model, execute
