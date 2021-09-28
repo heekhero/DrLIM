@@ -17,3 +17,5 @@ python train.py
 python plot.py
 ```
 Result on MNIST:
+
+![result_on_mnist](result.png)
