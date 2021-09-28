@@ -27,19 +27,5 @@ class MNIST_clip(MNIST):
         self.targets[nine_idx] = 1
         self.targets = self.targets[cat_idx]
 
-if __name__ == '__main__':
-    stl10 = MNIST_Clip('./data', True, download=True)
-
-    rand_idx = np.random.permutation(stl10.data.shape[0])
-    data = stl10.data[rand_idx]
-    label = stl10.targets[rand_idx]
-
-    for i in range(50):
-        img = data[i]
-
-        plt.imshow(img)
-        plt.title(label[i])
-        plt.show()
-
 
 

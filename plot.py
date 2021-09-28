@@ -21,7 +21,7 @@ dataloader = dataloader.DataLoader(dataset, batch_size=128, shuffle=False)
 model = ConvNet(1, 2)
 
 
-model.load_state_dict(torch.load('./data/model_0.pth'))
+model.load_state_dict(torch.load('./data/model_1281.pth'))
 dataiter = iter(dataloader)
 
 X = None
@@ -41,4 +41,4 @@ X = X.detach().numpy()
 y = y.detach().numpy()
 plt.figure()
 plt.scatter(X[:, 0], X[:, 1], c=y)
-plt.show()
+plt.savefig('result.png')
