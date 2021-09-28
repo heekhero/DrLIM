@@ -39,6 +39,10 @@ for t, data in tqdm(enumerate(dataiter)):
 
 X = X.detach().numpy()
 y = y.detach().numpy()
+
+
 plt.figure()
+plt.axis('off')
+plt.tight_layout()
 plt.scatter(X[:, 0], X[:, 1], c=y)
 plt.savefig('result.png')
